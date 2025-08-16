@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduQuest - PreUniQuest</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="icon" href="https://img.icons8.com/external-flat-juicy-fish/344/external-education-online-learning-flat-flat-juicy-fish.png">
+  <style>
+    html { scroll-behavior: smooth; }
+    .dark-mode { background-color: #1f2937; color: #e5e7eb; }
+    .dark-section { background-color: #111827; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans transition-colors duration-500">
+
+  <!-- NAVBAR -->
+  <header class="bg-white shadow-md fixed w-full z-10 dark-mode-toggle">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-indigo-600">EduQuest</h1>
+      <nav>
+        <ul class="flex gap-6 text-gray-700 font-medium">
+          <li><a href="#inicio" class="hover:text-indigo-600">Inicio</a></li>
+          <li><a href="#sobre" class="hover:text-indigo-600">Sobre</a></li>
+          <li><a href="#funcionalidades" class="hover:text-indigo-600">Funcionalidades</a></li>
+          <li><a href="#registro" class="hover:text-indigo-600">Registro</a></li>
+        </ul>
+      </nav>
+      <button id="darkModeBtn" class="ml-4 p-2 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600">
+        🌙
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="pt-24 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center px-6 py-16">
+      <div class="flex-1 text-center md:text-left" data-aos="fade-right">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">PreUniQuest: Tu puente hacia la universidad</h2>
+        <p class="text-lg mb-6">Prepárate para el ingreso universitario con misiones gamificadas, simulacros inteligentes y mentoría de excelencia.</p>
+        <a href="#registro" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100">Empieza Gratis</a>
+      </div>
+      <div class="flex-1 mt-10 md:mt-0" data-aos="fade-left">
+        <img src="https://cdn.pixabay.com/photo/2017/01/10/23/01/online-education-1976964_1280.png" alt="Educación virtual" class="rounded-xl shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE EL MÓDULO -->
+  <section id="sobre" class="py-16 bg-white dark-section" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto text-center px-6">
+      <h3 class="text-3xl font-bold text-indigo-600 mb-4">¿Qué es PreUniQuest?</h3>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">PreUniQuest es un módulo especializado de EduQuest que ofrece itinerarios personalizados, simulacros inteligentes y mentoría virtual para estudiantes que buscan destacar en su transición hacia la universidad. Todo inspirado en modelos educativos de excelencia como los COAR.</p>
+    </div>
+  </section>
+
+  <!-- FUNCIONALIDADES -->
+  <section id="funcionalidades" class="py-16 bg-gray-100 dark-section">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold text-indigo-600 mb-12">Funcionalidades Clave</h3>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition-transform dark-section" data-aos="zoom-in">
+          <img src="https://img.icons8.com/color/96/000000/goal.png" class="mx-auto mb-4">
+          <h4 class="font-bold text-xl mb-2">Itinerarios Personalizados</h4>
+          <p class="text-gray-600">Planes adaptados a tu nivel, intereses y metas universitarias.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition-transform dark-section" data-aos="zoom-in" data-aos-delay="100">
+          <img src="https://img.icons8.com/color/96/000000/test-passed.png" class="mx-auto mb-4">
+          <h4 class="font-bold text-xl mb-2">Simulacros Inteligentes</h4>
+          <p class="text-gray-600">Exámenes tipo SAT, ACT y pruebas regionales con feedback instantáneo.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition-transform dark-section" data-aos="zoom-in" data-aos-delay="200">
+          <img src="https://img.icons8.com/color/96/000000/artificial-intelligence.png" class="mx-auto mb-4">
+          <h4 class="font-bold text-xl mb-2">Mentoría Virtual</h4>
+          <p class="text-gray-600">Asesoría IA y mentores reales para guiar tu camino universitario.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition-transform dark-section" data-aos="zoom-in" data-aos-delay="300">
+          <img src="https://img.icons8.com/color/96/000000/teamwork.png" class="mx-auto mb-4">
+          <h4 class="font-bold text-xl mb-2">Comunidad Global</h4>
+          <p class="text-gray-600">Únete a guilds, participa en hackathons y gana certificados blockchain.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REGISTRO -->
+  <section id="registro" class="py-16 bg-white dark-section" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto text-center px-6">
+      <h3 class="text-3xl font-bold text-indigo-600 mb-6">¡Comienza tu viaje universitario hoy!</h3>
+      <p class="text-lg text-gray-600 mb-6">Regístrate gratis y accede a la versión beta del módulo PreUniQuest.</p>
+      <form class="bg-gray-100 rounded-xl p-8 shadow-lg max-w-md mx-auto">
+        <input type="text" placeholder="Nombre completo" class="w-full mb-4 px-4 py-2 rounded-md border border-gray-300">
+        <input type="email" placeholder="Correo electrónico" class="w-full mb-4 px-4 py-2 rounded-md border border-gray-300">
+        <button class="bg-indigo-600 text-white w-full py-3 rounded-md font-semibold hover:bg-indigo-700">Registrarme</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-gray-300 py-6">
+    <div class="max-w-7xl mx-auto text-center">
+      <p>&copy; 2025 EduQuest - Todos los derechos reservados.</p>
+      <div class="flex justify-center gap-4 mt-4">
+        <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook-new.png"/></a>
+        <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png"/></a>
+        <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/twitter.png"/></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS PARA DARK MODE -->
+  <script>
+    const darkBtn = document.getElementById('darkModeBtn');
+    darkBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+
+  <!-- AOS Animaciones -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduQuest - PreUniQuest</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="icon" href="https://img.icons8.com/external-flat-juicy-fish/344/external-education-online-learning-flat-flat-juicy-fish.png">
+  <style>
+    html { scroll-behavior: smooth; }
+    .dark-mode { background-color: #1f2937; color: #e5e7eb; }
+    .dark-section { background-color: #111827; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans transition-colors duration-500">
+
+  <!-- NAVBAR -->
+  <header class="bg-white shadow-md fixed w-full z-10 dark-mode-toggle">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-indigo-600">EduQuest</h1>
+      <nav>
+        <ul class="flex gap-6 text-gray-700 font-medium">
+          <li><a href="#inicio" class="hover:text-indigo-600">Inicio</a></li>
+          <li><a href="#sobre" class="hover:text-indigo-600">Sobre</a></li>
+          <li><a href="#funcionalidades" class="hover:text-indigo-600">Funcionalidades</a></li>
+          <li><a href="#preguntas" class="hover:text-indigo-600">Preguntas UNI</a></li>
+        </ul>
+      </nav>
+      <button id="darkModeBtn" class="ml-4 p-2 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600">🌙</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="pt-24 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center px-6 py-16">
+      <div class="flex-1 text-center md:text-left" data-aos="fade-right">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">PreUniQuest: Tu puente hacia la universidad</h2>
+        <p class="text-lg mb-6">Prepárate con preguntas reales del examen de admisión de la UNI — ahora disponibles para que practiques.</p>
+      </div>
+      <div class="flex-1 mt-10 md:mt-0" data-aos="fade-left">
+        <img src="https://cdn.pixabay.com/photo/2017/01/10/23/01/online-education-1976964_1280.png" alt="Educación virtual" class="rounded-xl shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="py-16 bg-white dark-section" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto text-center px-6">
+      <h3 class="text-3xl font-bold text-indigo-600 mb-4">¿Qué es PreUniQuest?</h3>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+        PreUniQuest incorpora simulacros y preguntas inspiradas en exámenes reales de la UNI, para ayudarte a fortalecer tu preparación con contenido auténtico y desafiante.
+      </p>
+    </div>
+  </section>
+
+  <!-- FUNCIONALIDADES -->
+  <section id="funcionalidades" class="py-16 bg-gray-100 dark-section">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold text-indigo-600 mb-12">Funcionalidades Principales</h3>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition-transform dark-section" data-aos="zoom-in">
+          <img src="https://img.icons8.com/color/96/000000/goal.png" class="mx-auto mb-4">
+          <h4 class="font-bold text-xl mb-2">Itinerarios Personalizados</h4>
+          <p class="text-gray-600">Planes de estudio adaptados a tus fortalezas y metas universitarias.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition-transform dark-section" data-aos="zoom-in" data-aos-delay="100">
+          <img src="https://img.icons8.com/color/96/000000/test-passed.png" class="mx-auto mb-4">
+          <h4 class="font-bold text-xl mb-2">Simulacros Inteligentes</h4>
+          <p class="text-gray-600">Preguntas tipo UNI reales con retroalimentación inmediata.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition-transform dark-section" data-aos="zoom-in" data-aos-delay="200">
+          <img src="https://img.icons8.com/color/96/000000/artificial-intelligence.png" class="mx-auto mb-4">
+          <h4 class="font-bold text-xl mb-2">Mentoría Virtual</h4>
+          <p class="text-gray-600">IA y mentores que te acompañan en tu camino preuniversitario.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition-transform dark-section" data-aos="zoom-in" data-aos-delay="300">
+          <img src="https://img.icons8.com/color/96/000000/teamwork.png" class="mx-auto mb-4">
+          <h4 class="font-bold text-xl mb-2">Comunidad Global</h4>
+          <p class="text-gray-600">Colabora con otros estudiantes en retos académicos globales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREGUNTAS UNI -->
+  <section id="preguntas" class="py-16 bg-white dark-section" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto text-center px-6">
+      <h3 class="text-3xl font-bold text-indigo-600 mb-6">Preguntas reales de la UNI</h3>
+      <div class="grid md:grid-cols-2 gap-6 text-left">
+        <!-- Pregunta 1 -->
+        <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow hover:scale-105 transition-transform">
+          <h4 class="font-bold mb-3">1. Sucesión numérica (UNI 2019-I):</h4>
+          <p>2; 6; 12; X; 30; 42; 56. ¿Cuál es el valor de X?</p>
+          <ul class="list-disc pl-6 mt-2">
+            <li>A) 18</li>
+            <li>B) 20</li>
+            <li>C) 22</li>
+            <li>D) 24</li>
+            <li>E) 26</li>
+          </ul>
+        </div>
+        <!-- Pregunta 2 -->
+        <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow hover:scale-105 transition-transform">
+          <h4 class="font-bold mb-3">2. Historia Peruana (UNI 2011-II):</h4>
+          <p>Durante el gobierno de __________ se crearon PETROPERÚ, SEDAPAL y ELECTROPERÚ.</p>
+          <ul class="list-disc pl-6 mt-2">
+            <li>A) Juan Velasco Alvarado</li>
+            <li>B) Fernando Belaúnde Terry</li>
+            <li>C) Manuel Prado Ugarteche</li>
+            <li>D) José Luis Bustamante y Rivero</li>
+            <li>E) Manuel Apolinario Odría</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-gray-300 py-6">
+    <div class="max-w-7xl mx-auto text-center">
+      <p>&copy; 2025 EduQuest - Inspirado en exámenes reales de la UNI</p>
+    </div>
+  </footer>
+
+  <!-- JS PARA DARK MODE -->
+  <script>
+    const darkBtn = document.getElementById('darkModeBtn');
+    darkBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+
+  <!-- AOS Animaciones -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+</body>
+</html>
